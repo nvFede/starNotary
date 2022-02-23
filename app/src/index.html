@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>StarNotary DAPP Front End</title>
+
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400&display=swap');
+    </style>
+
+    <link rel="stylesheet" href="main.css">
+  </head>
+
+  <body>
+
+    <div class="header">
+      <h1 class="header__title">StarNotary DAPP</h1>
+    </div>
+    <div class="page">
+      <div class="card">
+        <label class="card__label" for="name">Star Name:</label>
+        <h3  id='name'> </h3>
+        <button class="card__button" onclick="App.starNameFunc()">Get Star Name</button>
+      </div>
+
+      <div class="card">
+        <label class="card__label" for="owner">Star Owner:</label>
+        <h3  id='owner'> </h3>
+        <button class="card__button" onclick="App.starOwnerFunc()">Get Star Owner</button>
+      </div>
+      <div class="card">
+        <h3 class="card__label">Claim Star</h3>
+        <span id="status"></span>
+        <button class="card__button card__button--secondary" id="claimStar" onclick="App.claimStarFunc()">Claim a Star</button>
+      </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>
